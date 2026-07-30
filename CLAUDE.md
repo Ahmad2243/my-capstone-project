@@ -16,3 +16,8 @@ This is a capstone software project focused on [Briefly state your project's goa
 - **Naming Conventions:** camelCase for variables and functions, PascalCase for classes.
 - **Commit Messages:** Follow the Conventional Commits 1.0.0 standard explicitly.
 - **Error Handling:** Always wrap asynchronous operations in try/catch blocks and log helpful errors.
+## AI Collaboration & Prompting Rules Learned
+
+1. **Explicit Requirements Over Vague Requests:** Always provide component state specs, validation constraints, and file references up front to prevent missing feature logic and extra refactoring cycles.
+2. **Accessible Form Architecture:** Ensure all interactive elements include explicit accessibility properties (e.g., proper `label` pairings, `aria-invalid` flags, and high-contrast focus states).
+3. **Mandatory Test-Driven Verification:** Require written unit tests alongside component logic for edge cases (e.g., invalid email formats, boundary lengths) before considering a feature ready for review.
