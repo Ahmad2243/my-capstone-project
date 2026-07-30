@@ -16,3 +16,8 @@ This is a capstone software project focused on [Briefly state your project's goa
 - **Naming Conventions:** camelCase for variables and functions, PascalCase for classes.
 - **Commit Messages:** Follow the Conventional Commits 1.0.0 standard explicitly.
 - **Error Handling:** Always wrap asynchronous operations in try/catch blocks and log helpful errors.
+
+## Project Rules
+1. **Form Handling:** Always use `react-hook-form` and `zod` for forms—never use manual `useState` or uncontrolled inputs.
+2. **Accessibility:** Always link input fields to error messages using `aria-describedby` and `<label htmlFor="...">`.
+3. **Verification:** Always write and run unit tests (`.test.tsx`) for form components before finalizing code.
