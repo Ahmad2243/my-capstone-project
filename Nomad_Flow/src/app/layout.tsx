@@ -1,6 +1,10 @@
 import '../styles/globals.css'
 import type { ReactNode } from 'react'
 import Navigation from './components/Navigation'
+import { Inter } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata = {
   title: 'Nomad Flow',
@@ -9,7 +13,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={cn("font-sans", inter.variable)}>
       <body className="min-h-screen flex flex-col">
         <Navigation />
         <main className="flex-1 w-full mx-auto px-4 sm:px-6 lg:px-8 max-w-[1280px]">
