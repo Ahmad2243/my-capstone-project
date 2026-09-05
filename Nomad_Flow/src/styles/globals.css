@@ -19,6 +19,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html,
+body {
+  background-color: #020617;
+  color: #f1f5f9;
+}
+
+.trip-detail-theme .bg-slate-50,
+.trip-detail-theme .bg-white {
+  background-color: rgb(15 23 42 / 0.8) !important;
+  border-color: rgb(255 255 255 / 0.1) !important;
+  backdrop-filter: blur(24px);
+}
+
+.trip-detail-theme .text-slate-900,
+.trip-detail-theme .text-slate-700 {
+  color: #f8fafc !important;
+}
+
+.trip-detail-theme .text-slate-600,
+.trip-detail-theme .text-slate-500 {
+  color: #94a3b8 !important;
+}
+
+.trip-detail-theme .bg-slate-200 {
+  background-color: #334155 !important;
+}
+
 @layer base {
   .theme {
     --font-heading: var(--font-sans);
