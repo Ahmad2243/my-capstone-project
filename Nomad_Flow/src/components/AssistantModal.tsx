@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import NextImage from 'next/image';
 import { Bot, X } from 'lucide-react';
 import TravelAssistant from '@/components/chat/TravelAssistant';
 
@@ -69,7 +70,7 @@ export default function AssistantModal() {
           {/* Top bar */}
           <div className="flex items-center justify-between px-4 py-3 border-b border-white/6">
             <div className="flex items-center gap-3">
-              <img src="logo.jpeg" alt="Nomad Flow" className="h-9 w-9 rounded-md object-cover" />
+              <NextImage src="/logo.jpeg" alt="Nomad Flow" width={36} height={36} className="h-9 w-9 object-cover rounded-xl" priority />
               <div>
                 <p className="text-xs font-semibold uppercase tracking-wide text-sky-300">Travel Assistant</p>
                 <h3 className="text-lg font-semibold text-white">Nomad Flow AI</h3>
