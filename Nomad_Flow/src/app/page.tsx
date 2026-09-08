@@ -3,7 +3,7 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import NextImage from 'next/image';
+import Logo from '@/components/Logo';
 import { ArrowRight, Bot, BriefcaseBusiness, Calendar, Camera, CloudSun, Code2, Mail, MapPin, MessageCircle, Pause, Play, Search, Sparkles } from 'lucide-react';
 
 const BACKGROUND_SLIDES = [
@@ -105,7 +105,7 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-7xl gap-8 md:grid-cols-3">
           <div>
             <div className="flex items-center gap-3 font-bold text-white">
-              <NextImage src="/logo.jpeg" alt="Nomad Flow" width={36} height={36} className="h-9 w-9 object-cover rounded-xl" priority />
+              <Logo className="h-9 w-9" />
               <span className="text-white font-bold">Nomad Flow</span>
             </div>
             <p className="mt-3 max-w-xs text-sm leading-6">Elevating travel planning with intelligent insights.</p>

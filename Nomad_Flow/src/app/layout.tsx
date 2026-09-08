@@ -1,9 +1,9 @@
 import '../styles/globals.css';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
-import NextImage from 'next/image';
 import { BriefcaseBusiness, Camera, Code2, Mail, MessageCircle, Sparkles } from 'lucide-react';
 import AssistantModal from '@/components/AssistantModal';
+import Logo from '@/components/Logo';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
@@ -34,7 +34,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
           <header className="sticky top-0 z-50 flex w-full items-center justify-between border-b border-white/10 bg-slate-900/40 px-6 py-4 backdrop-blur-md">
             <Link href="/" className="flex items-center gap-3">
-              <NextImage src="/logo.jpeg" alt="Nomad Flow" width={36} height={36} className="h-9 w-9 object-cover rounded-xl" priority />
+              <Logo className="h-9 w-9" />
               <span className="text-white font-bold">Nomad Flow</span>
             </Link>
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <div className="mx-auto grid w-full max-w-7xl gap-8 md:grid-cols-3">
               <div>
                 <Link href="/" className="flex items-center gap-3">
-                  <NextImage src="/logo.jpeg" alt="Nomad Flow" width={36} height={36} className="h-9 w-9 object-cover rounded-xl" priority />
+                  <Logo className="h-9 w-9" />
                   <span className="text-white font-bold">Nomad Flow</span>
                 </Link>
                 <p className="mt-3 max-w-xs text-sm leading-6">Elevating travel planning with intelligent insights.</p>
